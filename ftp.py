@@ -11,7 +11,8 @@ def anonymousLogin(hostname):
             ftp.dir()
     except Exception as e:
         print(str(e))
-        print(f"\n[-] Anonymous login on {hostname} failed")
+        print(f"\n[-] Anonymous login on {hostname} is unsucessful")
 
 hostname = "ftp.be.debian.org"
 anonymousLogin(hostname)
+
